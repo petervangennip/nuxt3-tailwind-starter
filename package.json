@@ -1,0 +1,40 @@
+{
+  "private": true,
+  "scripts": {
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare",
+    "prepare": "husky install",
+    "node-version": "node ./scripts/switch-node-version.js",
+    "createssl": "node ./scripts/create-ssl.js",
+    "pre-commit": "lint-staged",
+    "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs --ignore-path .gitignore",
+    "lint:fix": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs --fix --ignore-path .gitignore",
+    "build": "nuxt build",
+    "dev": "nuxt dev --https --ssl-cert ./.ssl/localhost.pem --ssl-key ./.ssl/localhost-key.pem"
+  },
+  "lint-staged": {
+    "**/*.{js,ts,vue,html,md,json,css}": [
+      "prettier --write"
+    ],
+    "**/*.{js,ts,vue,html}": [
+      "npm run lint:fix"
+    ]
+  },
+  "devDependencies": {
+    "@rushstack/eslint-patch": "^1.2.0",
+    "@vue/eslint-config-prettier": "^7.0.0",
+    "autoprefixer": "^10.4.13",
+    "eslint": "^8.31.0",
+    "eslint-plugin-vue": "^9.8.0",
+    "eslint-plugin-vuejs-accessibility": "^2.0.0",
+    "husky": "^6.0.0",
+    "lint-staged": "^13.1.0",
+    "nuxt": "3.0.0",
+    "postcss": "^8.4.21",
+    "postcss-import": "^15.1.0",
+    "prettier": "^2.8.2",
+    "tailwindcss": "^3.2.4",
+    "vite-plugin-eslint": "^1.8.1"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "editor.tabSize": 2,
+  "editor.rulers": [120],
+  "editor.quickSuggestions": {
+    "strings": true
+  },
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true,
+    "source.fixAll.markdownlint": true
+  },
+  "editor.formatOnSave": false,
+  "files.associations": {
+    ".env.*": "env",
+    "*.config": "xml"
+  },
+  "eslint.validate": ["javascript", "javascriptreact", "vue"],
+  "postcss.validate": false,
+  "vetur.validation.script": false
+}
