@@ -39,5 +39,9 @@
     "prettier": "^2.8.2",
     "tailwindcss": "^3.2.4",
     "vite-plugin-eslint": "^1.8.1"
+  },
+  "dependencies": {
+    "@storyblok/nuxt": "^5.0.2"
   }
 }
+

@@ -1,0 +1,28 @@
+@layer base {
+  :root {
+    /* blue */
+    --color-primary-100: 222 235 243; /* #DEEBF3 */
+    --color-primary-200: 119 198 232; /* #77C6E8 */
+    --color-primary-300: 68 158 221; /* #449EDD */
+    --color-primary-500: 7 125 175; /* #077DAF */
+
+    /* green */
+    --color-secondary-300: 58 192 121; /* #3AC079 */
+    --color-secondary-500: 0 150 64; /* #009640 */
+
+    /* red */
+    --color-tertiary-300: 208 50 65; /* #D03241 */
+    --color-tertiary-500: 189 28 65; /* #BD1C1D */
+
+    /* purple */
+    --color-quaternary-300: 62 52 153; /* #3E3499 */
+    --color-quaternary-500: 48 39 131; /* #302783 */
+
+    /* dark */
+    --color-dark: 29 29 27; /* #1D1D1B */
+
+    /* Gray */
+    --color-gray-300: 242 242 242; /* #F2F2F2 */
+    --color-gray-500: 204 204 204; /* #CCCCCC */
+  }
+}

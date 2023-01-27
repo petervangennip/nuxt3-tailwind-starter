@@ -1,0 +1,122 @@
+html {
+  /* @apply font-vag; */
+}
+
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6 {
+  @apply font-bold text-dark;
+}
+
+h1,
+.h1 {
+  /* @apply text-6xl leading-11; */
+
+  @screen lg {
+    @apply text-10xl leading-13;
+  }
+}
+
+h2,
+.h2 {
+  /* @apply text-5xl leading-9; */
+
+  @screen lg {
+    @apply text-8xl leading-12;
+  }
+}
+
+h3,
+.h3 {
+  /* @apply text-4xl leading-8; */
+
+  @screen lg {
+    @apply text-2xl leading-7;
+  }
+}
+
+h4,
+.h4 {
+  /* @apply text-4xl leading-8; */
+
+  @screen lg {
+    @apply text-7xl leading-12;
+  }
+}
+
+h5,
+.h5 {
+  /* @apply text-4xl leading-8; */
+
+  @screen lg {
+    @apply text-5xl leading-10;
+  }
+}
+
+h6,
+.h6 {
+  /* @apply text-lg leading-6 font-noto-sans; */
+
+  @screen lg {
+    @apply text-xl leading-7;
+  }
+}
+
+p {
+  @apply text-base leading-7;
+}
+
+a {
+  @apply underline text-dark;
+}
+
+.rte {
+  ul {
+    @apply list-disc pl-4 mb-3;
+
+    a {
+      @apply mb-0;
+    }
+  }
+
+  ol {
+    @apply list-decimal pl-4 mb-3;
+
+    a {
+      @apply mb-0;
+    }
+  }
+
+  a {
+    @apply block mb-3 underline;
+
+    &:hover {
+      @apply no-underline;
+    }
+
+    &.btn {
+      @apply no-underline;
+
+      &:hover {
+        @apply no-underline;
+      }
+    }
+  }
+
+  a {
+    @apply underline decoration-primary-200 decoration-[5px] decoration-solid underline-offset-4 transition-colors;
+
+    &:hover {
+      @apply underline decoration-primary-300;
+    }
+  }
+}

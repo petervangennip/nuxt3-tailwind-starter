@@ -1,0 +1,9 @@
+@layer base {
+  html {
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  .app {
+    @apply flex flex-col min-h-screen overflow-hidden;
+  }
+}

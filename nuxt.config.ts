@@ -1,5 +1,3 @@
-// https://nuxt.com/docs/api/configuration/nuxt-config
-// eslint-disable-next-line no-undef
 export default defineNuxtConfig({
   app: {
     head: {
@@ -10,7 +8,7 @@ export default defineNuxtConfig({
     },
   },
   css: ['~/assets/css/main.css'],
-  modules: ['@nuxt/image-edge', 'nuxt-icon'],
+  modules: [['@storyblok/nuxt', { accessToken: process.env.NUXT_STORYBLOK_APIKEY }], '@nuxt/image-edge', 'nuxt-icon'],
   postcss: {
     plugins: {
       'postcss-import': {},
