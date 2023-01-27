@@ -22,6 +22,7 @@
     ]
   },
   "devDependencies": {
+    "@nuxt/eslint-config": "^0.1.1",
     "@nuxt/image-edge": "^1.0.0-27913696.5d122a3",
     "@rushstack/eslint-patch": "^1.2.0",
     "@vue/eslint-config-prettier": "^7.0.0",
@@ -31,7 +32,7 @@
     "eslint-plugin-vuejs-accessibility": "^2.0.0",
     "husky": "^6.0.0",
     "lint-staged": "^13.1.0",
-    "nuxt": "3.0.0",
+    "nuxt": "^3.1.1",
     "nuxt-icon": "^0.2.10",
     "postcss": "^8.4.21",
     "postcss-import": "^15.1.0",
