@@ -1,6 +1,3 @@
-/* eslint-env node */
-require('@rushstack/eslint-patch/modern-module-resolution');
-
 module.exports = {
   root: true,
 
@@ -11,11 +8,13 @@ module.exports = {
 
   parserOptions: {
     ecmaVersion: 'latest',
+    sourceType: 'module',
   },
 
   extends: [
-    'plugin:vue/vue3-recommended',
     'eslint:recommended',
+    '@nuxt/eslint-config',
+    'plugin:vue/vue3-recommended',
     '@vue/eslint-config-prettier',
     'plugin:vuejs-accessibility/recommended',
   ],
@@ -25,5 +24,7 @@ module.exports = {
   rules: {
     'no-console': process.env.NODE_ENV === 'production' ? 'error' : 'off',
     'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off',
+    'vue/no-template-shadow': 'off',
+    'vue/component-name-in-template-casing': ['error', 'PascalCase'],
   },
 };

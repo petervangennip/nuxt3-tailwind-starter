@@ -22,6 +22,7 @@
     ]
   },
   "devDependencies": {
+    "@nuxt/image-edge": "^1.0.0-27913696.5d122a3",
     "@rushstack/eslint-patch": "^1.2.0",
     "@vue/eslint-config-prettier": "^7.0.0",
     "autoprefixer": "^10.4.13",
@@ -31,6 +32,7 @@
     "husky": "^6.0.0",
     "lint-staged": "^13.1.0",
     "nuxt": "3.0.0",
+    "nuxt-icon": "^0.2.10",
     "postcss": "^8.4.21",
     "postcss-import": "^15.1.0",
     "prettier": "^2.8.2",
